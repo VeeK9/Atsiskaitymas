@@ -103,11 +103,27 @@ main {
       }
 
       > button {
-        padding: 20px 60px;
-        border: 3px solid orange;
+        width: 185px;
+        height: 64px;
         border-radius: 32px;
         background-color: white;
         cursor: pointer;
+        position: relative;
+        border: none;
+      }
+
+      > button::after {
+        content: "";
+        width: 191px;
+        height: 70px;
+        border-radius: 35px;
+        background-image: radial-gradient(farthest-corner at 55% 100%, rgb(255, 123, 0) 20%, transparent),
+                          linear-gradient(to right, rgba(255, 96, 144, 0.978), transparent, rgba(154, 231, 170, 0.978)),
+                          radial-gradient(rgb(255, 123, 0), transparent);
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        z-index: -1;
       }
     }
 
@@ -315,11 +331,27 @@ main {
       }
 
       > button {
-        padding: 20px 60px;
-        border: 3px solid orange;
+        width: 185px;
+        height: 64px;
         border-radius: 32px;
         background-color: white;
         cursor: pointer;
+        position: relative;
+        border: none;
+      }
+
+      > button::after {
+        content: "";
+        width: 191px;
+        height: 70px;
+        border-radius: 35px;
+        background-image: radial-gradient(farthest-corner at 55% 100%, rgb(255, 123, 0) 20%, transparent),
+                          linear-gradient(to right, rgba(255, 96, 144, 0.978), transparent, rgba(154, 231, 170, 0.978)),
+                          radial-gradient(rgb(255, 123, 0), transparent);
+        position: absolute;
+        top: -3px;
+        left: -3px;
+        z-index: -1;
       }
     }
 
