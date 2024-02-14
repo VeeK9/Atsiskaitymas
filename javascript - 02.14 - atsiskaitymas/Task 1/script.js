@@ -17,10 +17,14 @@ document.querySelector('#output').append(kgs, lbs, grams, oz);
 document.querySelector('.wrapper > form').addEventListener('submit', e => {
     e.preventDefault();
     const kgsInput = parseFloat(e.target.elements.search.value);
-    console.log(kgsInput)
     
     if(kgsInput <= 0){
         kgs.textContent = 'Please type in a positive number.';
+        lbs.textContent = ``;
+        grams.textContent = ``;
+        oz.textContent = ``;
+    } else if(parseFloat(kgsInput).toString() == 'NaN') {
+        kgs.textContent = 'Please type in a number.';
         lbs.textContent = ``;
         grams.textContent = ``;
         oz.textContent = ``;
@@ -33,4 +37,3 @@ document.querySelector('.wrapper > form').addEventListener('submit', e => {
 
     e.target.reset();
 })
-
