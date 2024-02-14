@@ -19,3 +19,6 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+let filterDogOwners = masyvas => masyvas.filter(user => user.hasDog);
+let filterAdults = masyvas => masyvas.filter(user => user.age >= 18);
