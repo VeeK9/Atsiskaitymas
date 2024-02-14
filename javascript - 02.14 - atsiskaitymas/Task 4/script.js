@@ -11,7 +11,7 @@ bent minimalų stilių;
 
 const ENDPOINT = 'cars.json';
 
-fetch('cars.json')
+fetch(ENDPOINT)
     .then(res => res.json())
     .then(cars => {
         cars.forEach(car => {
