@@ -27,3 +27,36 @@
   margin-top: 50px;
   color: #333;
 }
+
+#output {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+
+  > div {
+    width: 300px;
+    padding: 10px;
+
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px lightgray;
+
+    text-align: center;
+
+    > .models {
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      color: darkblue;
+
+      > span {
+        padding: 5px 10px;
+        background-color: rgb(241, 240, 240);
+        border-radius: 5px;
+      }
+    }
+  }
+}
