@@ -52,6 +52,21 @@ form {
   color: #fff;
 }
 
+#output {
+  text-align: center;
+
+  > * + * {
+    margin-top: 5px;
+    font-size: 1.5em;
+  }
+
+  h1:first-child {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
@@ -61,5 +76,17 @@ form {
   #search,
   #submit-btn {
     font-size: 2em;
+  }
+
+  #output {
+    > * + * {
+      margin-top: 10px;
+      font-size: 3em;
+    }
+
+    h1:first-child {
+      font-size: 3.5em;
+      margin-bottom: 20px;
+    }
   }
 }
