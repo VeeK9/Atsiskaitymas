@@ -8,7 +8,7 @@ wasExpensive() - jeigu filmo budget bus didesnis nei 100 000 000 mln USD, tada g
 ------------------------------------------------------------------------------------------------------ */
 
 class Movie{
-    constructor(title, director, budget){
+    constructor({title, director, budget}){
         this.title = title;
         this.director = director;
         this.budget = budget;
@@ -16,4 +16,4 @@ class Movie{
     wasExpensive(){
         return this.budget > 100_000_000;
     }
-}
+};
